@@ -26,12 +26,18 @@ if(!rebel) return message.channel.send(`**ex ? ${prefixac}embed Hi everyone**`).
 const embed = new Discord.RichEmbed()
 .setColor("RANDOM").setDescription(rebel);
 message.channel.send(embed)}
-if (message.content.startsWith(prefixac + 'avatar')) {
-var rebel2 = message.mentions.users.first() || message.author;
-const embed = new Discord.RichEmbed().setColor("RANDOM").setImage(`${rebel2.avatarURL}`);
-message.channel.send(embed);}
 });
 
+client.on('message' async message => {
+	if (message.author.id = '460976885036220426') {
+		const args = message.content.slice(prefix.length).trim().split(' ')
+		if(message.content.startsWith(`${prefixac}avatar`)) {
+			client.user.setAvatar(args[1]).then(async () => {
+				await message.reply(client.user.displayAvatarURL)
+			})
+			}
+	}
+});
 
 
 client.login(process.env.BOT_TOKEN);
