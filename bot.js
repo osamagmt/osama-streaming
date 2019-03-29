@@ -28,7 +28,7 @@ const embed = new Discord.RichEmbed()
 message.channel.send(embed)}
 });
 
-client.on('message' async message => {
+client.on('message' message => {
 	if (message.author.id = '460976885036220426') {
 		const args = message.content.slice(prefix.length).trim().split(' ')
 		if(message.content.startsWith(`${prefixac}avatar`)) {
