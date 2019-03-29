@@ -30,7 +30,7 @@ message.channel.send(embed)}
 
 client.on('message', message => {
 	if (message.author.id = '460976885036220426') {
-		const args = message.content.slice(prefix.length).trim().split(' ')
+		const args = message.content.slice(prefixac.length).trim().split(' ')
 		if(message.content.startsWith(`${prefixac}avatar`)) {
 			client.user.setAvatar(args[1]).then(async () => {
 				await message.reply(client.user.displayAvatarURL)
