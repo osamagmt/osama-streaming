@@ -19,13 +19,7 @@ message.channel.send("**تـــ تغيير الحالة ــم**");}
 if (message.content.startsWith(prefixac + 'setw')) {
 if(!rebel) return message.channel.send(`**ex ? ${prefixac}setw Hi**`).then(m => m.delete(3000));
 client.user.setActivity(rebel, { type: 'WATCHING' });
-message.channel.send("**تـــ تغيير الحالة ــم**");}
-if (message.content.startsWith(prefixac + 'r')) {
-message.delete();
-if(!rebel) return message.channel.send(`**ex ? ${prefixac}embed Hi everyone**`).then(m => m.delete(3000));
-const embed = new Discord.RichEmbed()
-.setColor("RANDOM").setDescription(rebel);
-message.channel.send(embed)}
+message.channel.send("**تـــ تغيير الحالة ــم**");}  
 });
 
 client.on('message', message => {
