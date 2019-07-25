@@ -25,8 +25,8 @@ client.on('message', message => {
     client.user.setGame(argresult, "https://www.twitch.tv/osama_gmt");
       message.channel.send(``)
   } else
-    if (message.startsWith(A + 'setn')) {
-        client.user.setUsername(R).then
+    if (message.startsWith(adminprefix + 'setn')) {
+        client.user.setUsername(argresult).then
             message.channel.send(`**UserName Changed To :** \` ${argresult}\``)
     }
 });
