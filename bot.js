@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const adminprefix = "";
-const developers = ["460976885036220426" , ""];
+const developers = ["" , ""];
 client.on('ready', () => {
     console.log(`Logged as ${client.user.tag}`)
 })
@@ -31,4 +31,4 @@ client.on('message', message => {
     }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("");
